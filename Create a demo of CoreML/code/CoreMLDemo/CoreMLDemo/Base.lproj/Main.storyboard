@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16G12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_5055" translatesAutoresizingMaskIntoConstraints="NO" id="FPP-Hm-wf7">
+                                <rect key="frame" x="16" y="30" width="343" height="237"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.7843137255" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FPP-Hm-wf7" secondAttribute="height" multiplier="343:237" id="BiP-Ld-Vqf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2q-zc-7Ev">
+                                <rect key="frame" x="16" y="331" width="343" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D2q-zc-7Ev" firstAttribute="leading" secondItem="FPP-Hm-wf7" secondAttribute="leading" id="8Te-HL-zqg"/>
+                            <constraint firstItem="FPP-Hm-wf7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="PCm-UX-0TB"/>
+                            <constraint firstItem="D2q-zc-7Ev" firstAttribute="trailing" secondItem="FPP-Hm-wf7" secondAttribute="trailing" id="Sl9-mU-Q99"/>
+                            <constraint firstAttribute="trailing" secondItem="FPP-Hm-wf7" secondAttribute="trailing" constant="16" id="mqR-KR-xCK"/>
+                            <constraint firstItem="D2q-zc-7Ev" firstAttribute="top" secondItem="FPP-Hm-wf7" secondAttribute="bottom" constant="64" id="q9a-wQ-iwZ"/>
+                            <constraint firstItem="FPP-Hm-wf7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="qvC-uI-k6P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FPP-Hm-wf7" id="dT4-tE-SZh"/>
+                        <outlet property="lblState" destination="D2q-zc-7Ev" id="nCg-DG-WE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_5055" width="3264" height="2448"/>
+    </resources>
+</document>
